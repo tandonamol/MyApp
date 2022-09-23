@@ -13,7 +13,7 @@ const Signup: FC = ({navigation}: any) => {
 
   const handleSignup = () => {
     if (email.length == 0 || password.length == 0 || name.length == 0)
-      Alert.alert('Please enter your credentials');
+      Alert.alert('Please enter your credentials!');
     auth()
       .createUserWithEmailAndPassword(`${email}`, `${password}`)
       .then(() => {
